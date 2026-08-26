@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 110" role="img" aria-labelledby="title desc">
+<title>サンシャイン教育投資株式会社 ロゴ</title><desc>教育と未来をつなぐサンライズをモチーフにしたロゴ</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#2e6f95"/><stop offset="1" stop-color="#17324d"/></linearGradient></defs>
+<g transform="translate(10 10)">
+<circle cx="45" cy="45" r="17" fill="#c69a52"/>
+<path d="M12 62 Q45 28 78 62" fill="none" stroke="url(#g)" stroke-width="8" stroke-linecap="round"/>
+<path d="M20 75 Q45 51 70 75" fill="none" stroke="#2e6f95" stroke-width="5" stroke-linecap="round"/>
+<path d="M45 3v13M14 14l9 9M76 14l-9 9" stroke="#c69a52" stroke-width="5" stroke-linecap="round"/>
+</g>
+<text x="105" y="52" font-family="Georgia,'Times New Roman',serif" font-size="28" font-weight="700" fill="#17324d">SUNSHINE</text>
+<text x="105" y="82" font-family="Georgia,'Times New Roman',serif" font-size="18" letter-spacing="2.5" fill="#2e6f95">EDUCATION INVESTMENT</text>
+</svg>
