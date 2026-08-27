@@ -20,7 +20,7 @@ img{max-width:100%;display:block}
 .container{width:min(1180px,calc(100% - 48px));margin:auto}
 .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(23,50,77,.08)}
 .navbar{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:30px}
-.brand{display:flex;align-items:center;text-decoration:none;gap:12px}.brand-logo{width:250px;height:auto}
+.brand{display:flex;align-items:center;text-decoration:none;gap:12px}.brand-logo{width:250px;height:auto;object-fit:contain}.footer-brand{display:inline-flex;align-items:center;background:#fff;padding:7px 12px;border-radius:4px}.footer-logo{display:block;width:260px;height:auto;max-width:100%}
 .brand-mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,var(--blue),var(--navy));font-family:Georgia,serif;font-size:14px;letter-spacing:.08em}
 .brand-name{font-family:Georgia,"Noto Serif JP",serif;font-weight:700;letter-spacing:.04em;color:var(--navy);line-height:1.25}
 .brand-name small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:9px;letter-spacing:.16em;color:#87939a;font-weight:600;margin-top:2px}
@@ -134,6 +134,13 @@ textarea{min-height:170px;resize:vertical}
  .footer-grid{grid-template-columns:1fr}.footer-nav{justify-content:flex-start}.footer-bottom{flex-direction:column}
 }
 
+
+/* Public information / career-up */
+.publication-date{margin:-4px 0 28px;color:var(--muted);font-size:14px}.public-section{margin-top:72px}.compact-head{margin-bottom:26px}.public-table{box-shadow:0 8px 28px rgba(16,38,59,.045)}
+.public-table-wrap{overflow-x:auto;margin-top:26px}.data-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);min-width:680px}.data-table th,.data-table td{padding:18px 20px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}.data-table th{background:#f3f6f6;color:var(--navy);font-size:13px}.data-table td{font-size:14px}.data-table tr:last-child td{border-bottom:0}.data-table td:last-child,.data-table th:last-child{text-align:center;white-space:nowrap}.data-table .total-row td{font-weight:700;background:#fafbfb;color:var(--navy)}
+.period-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:26px}.period-card{background:#fff;border:1px solid var(--line);padding:30px 28px;position:relative}.period-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold)}.period-card span{display:block;color:var(--muted);font-size:13px}.period-card strong{display:block;margin-top:8px;font-family:Georgia,"Noto Serif JP",serif;color:var(--navy);font-size:42px;line-height:1.15;font-weight:500}.period-card small{font-family:"Noto Sans JP",sans-serif;font-size:16px}.note{margin:18px 0 0;color:var(--muted);font-size:13px}.public-contact-link{margin:24px 0 0}.public-contact-link a{color:var(--blue);font-weight:700;text-decoration:none}.public-contact-link a:hover{text-decoration:underline}
+@media(max-width:600px){.public-section{margin-top:52px}.data-table{min-width:0}.data-table,.data-table tbody,.data-table tr,.data-table th,.data-table td{display:block;width:100%}.data-table thead{display:none}.data-table tr{border-bottom:1px solid var(--line)}.data-table tr:last-child{border-bottom:0}.data-table td{border-bottom:0;padding:8px 14px;font-size:14px}.data-table td:first-child{padding-top:14px;font-weight:700;color:var(--navy);background:#f3f6f6}.data-table td:nth-child(2){padding-top:8px}.data-table td:last-child{text-align:left;padding-bottom:14px;font-weight:700}.data-table .total-row td{background:#fff}.data-table .total-row td:first-child{background:#f3f6f6}.period-grid{grid-template-columns:1fr;gap:12px}.period-card{padding:24px 22px}.period-card strong{font-size:36px}.public-table .company-row dt{font-size:13px}.public-table .company-row dd{font-size:14px}}
+
 /* Mobile refinements */
 @media (max-width: 600px){
   html{scroll-padding-top:68px}
@@ -223,7 +230,7 @@ textarea{min-height:170px;resize:vertical}
 
   .footer{padding:40px 0 20px}
   .footer-grid{gap:28px}
-  .footer-brand{font-size:18px}
+  .footer-brand{font-size:18px}.footer-logo{width:min(220px,72vw)}
   .footer-nav{display:grid;grid-template-columns:1fr 1fr;gap:0}
   .footer-nav a{padding:8px 0;font-size:13px}
   .footer-bottom{margin-top:28px;padding-top:15px;font-size:10px;line-height:1.7}
@@ -235,4 +242,25 @@ textarea{min-height:170px;resize:vertical}
   .hero h1{font-size:35px}
   .section-title{font-size:28px}
   .service-card{padding:21px 17px}
+}
+
+
+/* Information disclosure index */
+.public-list{display:grid;gap:16px;max-width:960px}
+.public-list-item{display:grid;grid-template-columns:1fr auto auto;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);padding:28px 30px;text-decoration:none;transition:.25s;box-shadow:0 8px 28px rgba(16,38,59,.04)}
+.public-list-item:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#cbd9df}
+.public-list-main h3{font-family:Georgia,"Noto Serif JP",serif;font-size:22px;line-height:1.5;font-weight:500;color:var(--navy);margin:0 0 8px}
+.public-list-main p{font-size:14px;color:var(--muted);margin:0}
+.public-list-meta{text-align:right;white-space:nowrap}
+.public-list-meta span{display:block;font-size:11px;color:var(--muted);letter-spacing:.08em}
+.public-list-meta time{display:block;margin-top:3px;font-size:13px;font-weight:700;color:var(--navy)}
+.public-list-arrow{font-size:24px;color:var(--gold);transition:transform .2s}
+.public-list-item:hover .public-list-arrow{transform:translateX(4px)}
+@media(max-width:600px){
+  .public-list-item{grid-template-columns:1fr auto;gap:14px 18px;padding:22px 20px}
+  .public-list-main{grid-column:1/-1}
+  .public-list-main h3{font-size:19px}
+  .public-list-main p{font-size:13px}
+  .public-list-meta{text-align:left}
+  .public-list-arrow{justify-self:end}
 }
